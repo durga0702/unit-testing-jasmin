@@ -6,7 +6,7 @@ function calculate(event) {
     const numberA = +numbers[0];
     const numberB = +numbers[1];
     const operation = inputValue.match(regex);
-    if (isNAN(numberA) || isNAN(numberB) || peration === null) {
+    if (isNAN(numberA) || isNAN(numberB) || operation === null) {
         updateResult('Operation not recognized');
     }
     const operator = operation[0];
