@@ -62,4 +62,20 @@ describe('Calculator.js', function () {
         const calculator2 = new Calculator();
         expect(calculator1).not.toBe(calculator2);
     });
+
+    //to be undefined
+    it('should check undefined', function () {
+        const calculator = new Calculator();
+        expect(calculator.add).not.toBeUndefined();
+        expect(calculator.add).toBeDefined();
+    });
+
+    //to be null
+    it('should check null', function () {
+        const calculator = new Calculator();
+        calculator.total = null;
+        expect(calculator.total).toBeNull();
+    });
+
+    //contain matcher
 })
